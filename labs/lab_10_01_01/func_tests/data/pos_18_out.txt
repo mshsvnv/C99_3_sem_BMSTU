@@ -1,0 +1,9 @@
+Alanine
+GSU
+12
+Valine
+GYS
+18
+Glycine
+GGU
+45

@@ -1,0 +1,1 @@
+./func_tests/data/neg_09_in.txt ./out/neg_out.txt f amino_acid Alanine

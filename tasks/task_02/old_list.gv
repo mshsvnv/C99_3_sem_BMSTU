@@ -1,0 +1,26 @@
+digraph "Doubly Linked List" {
+rankdir=LR;
+node [shape=record];
+start [label="null" shape=circle];
+end [label="null" shape=circle];
+f0 [label="{ <ref1> | <data> 1 | <ref2>  }"];
+start -> f0:ref1:c [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f0:ref2:c -> f1:data:n [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f1 [label="{ <ref1> | <data> 2 | <ref2>  }"];
+f1:ref1:c -> f0:data:s [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f1:ref2:c -> f2:data:n [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f2 [label="{ <ref1> | <data> 3 | <ref2>  }"];
+f2:ref1:c -> f1:data:s [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f2:ref2:c -> f3:data:n [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f3 [label="{ <ref1> | <data> 4 | <ref2>  }"];
+f3:ref1:c -> f2:data:s [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f3:ref2:c -> f4:data:n [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f4 [label="{ <ref1> | <data> 5 | <ref2>  }"];
+f4:ref1:c -> f3:data:s [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f4:ref2:c -> f5:data:n [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f5 [label="{ <ref1> | <data> 6 | <ref2>  }"];
+f5:ref1:c -> f4:data:s [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f5:ref2:c -> f6:data:n [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f6 [label="{ <ref1> | <data> 7 | <ref2>  }"];
+f6:ref1:c -> f5:data:s [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+f6:ref2:c -> end [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false]}

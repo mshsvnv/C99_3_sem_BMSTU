@@ -1,0 +1,12 @@
+Valine
+GYS
+20
+Glycine
+GGU
+32
+Lizine
+AAA
+45
+Valine
+GUU
+100

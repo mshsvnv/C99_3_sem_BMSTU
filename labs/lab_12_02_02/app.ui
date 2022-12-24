@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_window</class>
+ <widget class="QMainWindow" name="main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>WaitCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>2 Задание</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: (1, 2, 3)</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_fib">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <attribute name="title">
+      <string>Задача №1</string>
+     </attribute>
+     <widget class="QLabel" name="label_task">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>580</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Условие: заполнение массива числами Фибоначчи</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_res_1">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>290</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Результат</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_enter">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>200</y>
+        <width>310</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Введите количество чисел:</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="enter_amount">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>200</y>
+        <width>241</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid silver;</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="enter_amount_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>350</y>
+        <width>560</width>
+        <height>220</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid silver;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_filter">
+     <attribute name="title">
+      <string>Задача №2</string>
+     </attribute>
+     <widget class="QLabel" name="label_task_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>741</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Условие: убрать дубликаты из старого массива и записать в новый</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_res_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>400</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Результат</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_enter_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>391</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Введите числа исходного массива:</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="btn_without_stock">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>340</y>
+        <width>191</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>точный размер</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labe_mem">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>337</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Тип выделения памяти:</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="btn_with_stock">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>340</y>
+        <width>123</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>с запасом</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="enter_array">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>730</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid silver;</string>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="result_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>460</y>
+        <width>730</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid silver;</string>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

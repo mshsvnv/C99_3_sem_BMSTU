@@ -5,6 +5,19 @@
 
 #include "list.h"
 
+int list_len(node_t *head)
+{
+    int len = 0;
+
+    while (head)
+    {
+        len++;
+        head = head->next;
+    }
+
+    return len;
+}
+
 node_t *node_create(char *data)
 {
     node_t *tmp = malloc(sizeof(node_t));
@@ -137,15 +150,3 @@ void list_print(node_t *head)
     printf("\n");
 }
 
-int list_len(node_t *head)
-{
-    int len = 0;
-
-    while (head)
-    {
-        len++;
-        head = head->next;
-    }
-
-    return len;
-}

@@ -1,0 +1,19 @@
+#! /usr/bin/gnuplot -persist
+
+set key left top
+set fit prescale 
+
+set terminal svg size 720 600
+set output './graphs/graph_1.svg'
+set size ratio 0.5625
+
+set xlabel "Array Size"
+set ylabel "Eltime, micros"
+
+set grid
+set title "Сравнение сортировок" font "Helvetica Bold, 20"
+
+plot './data_postproc/1_O2_grap_1.txt' with linespoints title "bubble sort: data" pt 1 lw 2 lt rgb "red", \
+'./data_postproc/2_O2_grap_1.txt' with linespoints title "bubble sort: keys" pt 2 lt rgb "orange", \
+'./data_postproc/3_O2_grap_1.txt' with linespoints title "quick sort: data" pt 3 lt rgb "navy", \
+'./data_postproc/4_O2_grap_1.txt' with linespoints title "quick sort: keys" pt 4 lt rgb "green"
